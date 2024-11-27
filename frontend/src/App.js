@@ -6,6 +6,9 @@ import PredictionResult from "./components/Prediction";
 import DataVisualization from "./components/DataVisualization";
 import LandingPage from "./components/Hero";
 import SentimentAnalysisForm from "./components/Sentiment";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+import SleepHelp from "./components/SleepHelp";
 
 const App = () => {
   const [prediction, setPrediction] = useState(null);
@@ -16,9 +19,12 @@ const App = () => {
       <LandingPage/>
       <AboutUs/>
       <InputForm setPrediction={setPrediction} />
-      <PredictionResult prediction={prediction} />
+      
       <DataVisualization />
       <SentimentAnalysisForm/>
+      <SleepHelp/>
+      <FAQ/>
+      <Footer/>
     </div>
   );
 };

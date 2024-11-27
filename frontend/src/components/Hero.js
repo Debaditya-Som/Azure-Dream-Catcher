@@ -13,7 +13,7 @@ const LandingPage = () => {
         </p>
         <a
           href="#cta"
-          className="bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
+          className="bg-[#9B59B6] text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
         >
           Try it Now
         </a>
@@ -25,7 +25,7 @@ const LandingPage = () => {
           </p>
           <a
             href="/input-form"
-            className="bg-teal-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-teal-600 transition duration-300"
+            className="bg-[#9B59B6] text-white py-3 px-6 rounded-lg shadow-lg hover:bg-teal-600 transition duration-300"
           >
             Get Started
           </a>

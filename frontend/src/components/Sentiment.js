@@ -29,12 +29,18 @@ const SentimentAnalysisForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#9B59B6] flex justify-center items-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-96">
+    <div
+      className="min-h-screen flex justify-center items-center px-2 py-2 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          'url("https://wallpapers.com/images/hd/4k-firewatch-purple-forest-silhouette-l9ij5athfr2lj8on.jpg")',
+      }}
+    >
+      <div className="bg-white/40 backdrop-blur-lg p-8 rounded-lg shadow-lg w-104 md:w-120">
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
           Dream Sentiment Analysis
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-2">
           <div>
             <label
               htmlFor="dreamText"
@@ -60,7 +66,7 @@ const SentimentAnalysisForm = () => {
         </form>
 
         {sentimentResult && (
-          <div className="mt-6 p-4 bg-green-100 rounded-md">
+          <div className="mt-4 p-4 bg-green-100 rounded-md">
             <h3 className="text-lg font-semibold text-green-800">Sentiment Analysis Result:</h3>
             <p className="text-gray-700">
               Sentiment:{" "}
