@@ -9,7 +9,7 @@ def generate_sleep_data(days):
         rem_sleep = round(random.uniform(10, 30), 2)
         heart_rate = random.randint(60, 80)
 
-        # Define the Sleep Quality based on thresholds
+
         if sleep_duration >= 7 and rem_sleep >= 20 and heart_rate <= 70:
             sleep_quality = "Good"
         else:
