@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import AboutUs from "./components/AboutUs";
 import Header from "./components/Header";
 import InputForm from "./components/InputForm";
-import PredictionResult from "./components/Prediction";
+
+import Map from "./components/Map";
 import DataVisualization from "./components/DataVisualization";
 import LandingPage from "./components/Hero";
 import SentimentAnalysisForm from "./components/Sentiment";
@@ -11,7 +12,7 @@ import Footer from "./components/Footer";
 import SleepHelp from "./components/SleepHelp";
 
 const App = () => {
-  const [prediction, setPrediction] = useState(null);
+  const [ setPrediction] = useState(null);
 
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
       
       <DataVisualization />
       <SentimentAnalysisForm/>
+      <Map/>
       <SleepHelp/>
       <FAQ/>
       <Footer/>
