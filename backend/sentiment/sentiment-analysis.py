@@ -1,8 +1,8 @@
 import requests
 
 # Azure endpoint and API key
-endpoint = "https://dream-catcher-ds.cognitiveservices.azure.com/"  # Replace with your endpoint
-api_key = "EBwVfmDvkmb8Rsv4CvdzaYZXPhW8o2ciNh4STof2l2w30MmEIhEKJQQJ99AKACYeBjFXJ3w3AAAaACOGr6m8"  # Replace with your API key
+endpoint = "https://dream-catcher-ds.cognitiveservices.azure.com/"  
+api_key = "EBwVfmDvkmb8Rsv4CvdzaYZXPhW8o2ciNh4STof2l2w30MmEIhEKJQQJ99AKACYeBjFXJ3w3AAAaACOGr6m8"  
 
 # Define the sentiment analysis API URL
 sentiment_url = endpoint + "text/analytics/v3.1/sentiment"

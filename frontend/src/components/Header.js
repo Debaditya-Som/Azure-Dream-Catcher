@@ -1,14 +1,21 @@
 import React from "react";
-import './Header.css'; 
 
-const Header = () => {
+const Navbar = () => {
   return (
-    <header className="header p-5 bg-gradient-to-br from-cyan-400 to-blue-700 text-white text-center rounded-lg shadow-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:transform hover:translate-y-[-5px]">
-      <h1 className="header-title text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-shadow animation-fadeIn">
-        Azure Dream Catcher
-      </h1>
-    </header>
+    <nav className="navbar p-5 bg-[#F6F2E6] text-black shadow-xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:transform hover:translate-y-[-5px] flex justify-between items-center">
+      <div className="navbar-left">
+        <h1 className="text-l sm:text-xl md:text-xl lg:text-3xl  tracking-wide text-shadow animation-fadeIn">
+          Azure Dream Catcher
+        </h1>
+      </div>
+      <div className="navbar-right flex space-x-4">
+        <a href="#about" className="nav-link hover:underline">About Us</a>
+        <a href="#services" className="nav-link hover:underline">Services</a>
+        <a href="#contact" className="nav-link hover:underline">Contact</a>
+        <a href="#faq" className="nav-link hover:underline">FAQ</a>
+      </div>
+    </nav>
   );
 };
 
-export default Header;
+export default Navbar;
