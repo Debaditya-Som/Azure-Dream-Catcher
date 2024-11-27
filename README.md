@@ -1,10 +1,20 @@
-# Azure-Dream-Catcher
+ # Azure-Dream-Catcher
 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0485e4f8-ffd2-4560-a4c0-9e6aa102549f" alt="main_logo">
 </p>
+<p align="center">
+<img src="https://img.shields.io/badge/Azure_ML-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure ML Workspace" width="100" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" width="100" />
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" width="100" />
+<img src="https://img.shields.io/badge/Azure_AI-5C2D91?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure AI" width="100" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="logo" width="100" />
+   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="logo" width="100" />
 
+   <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge" alt="logo" width="100" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="logo" width="100" />
+  </p>
 This project is a web application designed to predict sleep quality based on user input such as sleep duration, REM sleep percentage, and heart rate. Additionally, it offers sentiment analysis of user-submitted dream descriptions to understand the emotional tone of the text.
 
 
