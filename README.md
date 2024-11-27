@@ -1,6 +1,12 @@
 # Azure-Dream-Catcher
 
-This web-based application predicts sleep quality based on user input, including sleep duration, REM sleep percentage, and heart rate. By using a machine learning model, the app classifies the sleep quality as either **Good** or **Poor**.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0485e4f8-ffd2-4560-a4c0-9e6aa102549f" alt="main_logo">
+</p>
+
+This project is a web application designed to predict sleep quality based on user input such as sleep duration, REM sleep percentage, and heart rate. Additionally, it offers sentiment analysis of user-submitted dream descriptions to understand the emotional tone of the text.
+
 
 ## Features
 - **Sleep Quality Prediction:** Predicts the quality of sleep based on parameters like sleep duration, REM sleep, and heart rate.
