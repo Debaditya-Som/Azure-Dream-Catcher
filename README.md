@@ -2,15 +2,9 @@
 
 This web-based application predicts sleep quality based on user input, including sleep duration, REM sleep percentage, and heart rate. By using a machine learning model, the app classifies the sleep quality as either **Good** or **Poor**.
 
-## Table of Contents
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
+## Features
+- **Sleep Quality Prediction:** Predicts the quality of sleep based on parameters like sleep duration, REM sleep, and heart rate.
+- **Sentiment Analysis:** Analyzes the sentiment of the dream description entered by the user to determine the overall mood or emotion in the text.
 
 ## Overview
 This application consists of two main components:
@@ -23,29 +17,20 @@ This application consists of two main components:
 - **Minimalistic Design**: The application is designed with simplicity in mind, featuring a clean and intuitive interface.
 
 ## Tech Stack
+- **Backend:** 
+  - Python (Flask)
+  - Azure ML Workspace (for model training)
+  - Azure AI (for Sentiment Analysis)
+- **Frontend:** 
+  - React.js
+  - Tailwind CSS 
 
-### Backend
-- **Flask**: A lightweight Python web framework used to create the REST API for processing input and returning predictions.
-- **Python**: Used for backend logic and machine learning model integration.
-- **Pickle**: For loading and saving the machine learning model.
-- **NumPy**: Handles numerical data processing.
+## Model Training
+The sleep quality prediction model was trained using **Azure ML Workspace**. The dataset was uploaded and stored in **Azure Blob Storage**, ensuring scalability and easy access and the model was trained in **Azure ML Workspace**.
 
-### Frontend
-- **ReactJS**: A JavaScript library for building dynamic user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework used to design the frontend in a minimalist, aesthetically pleasing way.
-- **Axios**: A promise-based HTTP client used to communicate with the Flask API.
+## Sentiment Analysis
+For sentiment analysis, the project leverages **Azure AI**'s **Text Analytics API**. The API is used to analyze the sentiment of the dream descriptions provided by the users. Based on the emotional tone, the API classifies the text into different sentiment categories such as positive, neutral, or negative.
 
-### Machine Learning
-- **Model**: The machine learning model (saved as a `.pkl` file) classifies sleep quality based on input features like sleep duration, REM sleep percentage, and heart rate.
-
-## Features
-- **User Input Form**: Users can input three features:
-  - **Sleep Duration** (in hours)
-  - **REM Sleep** (percentage)
-  - **Heart Rate** (beats per minute)
-  
-- **Prediction Result**: After submission, the model predicts whether the sleep quality is "Good" or "Poor".
-- **API Integration**: The frontend interacts with the Flask backend through a REST API.
-- **Responsive Design**: The layout is responsive, adapting to different screen sizes.
-- **Minimalistic UI**: The application features a clean and simple design powered by Tailwind CSS.
-
+## Credits
+- Azure ML Workspace: Used to train and deploy the sleep quality prediction model.
+- Azure AI (Text Analytics API): Used for sentiment analysis on user-provided dream descriptions
