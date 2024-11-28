@@ -57,4 +57,4 @@ For sentiment analysis, the project leverages **Azure AI**'s **Text Analytics AP
 
 ## Presnetation link :
 
-[Click Here]{https://stdntpartners-my.sharepoint.com/:p:/g/personal/debaditya_som_studentambassadors_com/ETwtFl5dYz9Ekr8XYHBsFqEBtL-oskQF0XyGtNun3UvQ1g?e=98Tef3}
+[Click Here]
