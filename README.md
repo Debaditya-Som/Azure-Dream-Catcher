@@ -21,6 +21,7 @@ This project is a web application designed to predict sleep quality based on use
 ## Features
 - **Sleep Quality Prediction:** Predicts the quality of sleep based on parameters like sleep duration, REM sleep, and heart rate.
 - **Sentiment Analysis:** Analyzes the sentiment of the dream description entered by the user to determine the overall mood or emotion in the text.
+- **Nearby Clinics Locator**: Helps users locate nearby clinics or counseling centers based on their current location, providing easy access to professional assistance when needed.
 
 ## Project Workflow
 
@@ -52,10 +53,21 @@ The sleep quality prediction model was trained using **Azure ML Workspace**. The
 ## Sentiment Analysis
 For sentiment analysis, the project leverages **Azure AI**'s **Text Analytics API**. The API is used to analyze the sentiment of the dream descriptions provided by the users. Based on the emotional tone, the API classifies the text into different sentiment categories such as positive, neutral, or negative.
 
+## Nearby Clinics Locator
+The project integrates a Nearby Sleep Clinics Locator feature that uses geolocation services to assist users in finding the nearest clinics or counseling centers. This functionality aims to ensure users can easily access professional help based on their current location.
+
 ## Credits
 - Azure ML Workspace: Used to train and deploy the sleep quality prediction model.
 - Azure AI (Text Analytics API): Used for sentiment analysis on user-provided dream descriptions
 
-## Presnetation link :
+## Demo Video 
 
-[Click Here]
+
+
+https://github.com/user-attachments/assets/dbb6fda5-f57f-48f4-84fc-8767e7b2a274
+
+
+
+## Presentation link :
+
+[Click Here](https://stdntpartners-my.sharepoint.com/:p:/g/personal/debaditya_som_studentambassadors_com/EWMoHN3y8vtFhJCVOkuc9E8BQuNsuMDeGY3_Lb8dRkARpg?e=zBeoXg)
