@@ -54,3 +54,7 @@ For sentiment analysis, the project leverages **Azure AI**'s **Text Analytics AP
 ## Credits
 - Azure ML Workspace: Used to train and deploy the sleep quality prediction model.
 - Azure AI (Text Analytics API): Used for sentiment analysis on user-provided dream descriptions
+
+## Presnetation link :
+
+[Click Here]{https://stdntpartners-my.sharepoint.com/:p:/g/personal/debaditya_som_studentambassadors_com/ETwtFl5dYz9Ekr8XYHBsFqEBtL-oskQF0XyGtNun3UvQ1g?e=98Tef3}
