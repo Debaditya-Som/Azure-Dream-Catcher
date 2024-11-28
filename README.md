@@ -22,6 +22,10 @@ This project is a web application designed to predict sleep quality based on use
 - **Sleep Quality Prediction:** Predicts the quality of sleep based on parameters like sleep duration, REM sleep, and heart rate.
 - **Sentiment Analysis:** Analyzes the sentiment of the dream description entered by the user to determine the overall mood or emotion in the text.
 
+## Project Workflow
+
+![image](https://github.com/user-attachments/assets/b8371671-4e0f-445f-aada-fc4781cfe605)
+
 ## Overview
 This application consists of two main components:
 1. **Backend (Flask API)**: A RESTful API that accepts user input and uses a machine learning model to make predictions.
