@@ -99,7 +99,7 @@ const Map = () => {
     };
 
     return (
-<div className="flex flex-col md:flex-row p-6 shadow-lg bg-[#bce3f3] rounded-lg">
+<div id="map"className="flex flex-col md:flex-row p-6 shadow-lg bg-[#bce3f3] rounded-lg">
     
     <div
         className="md:w-1/3 p-4 shadow-md flex flex-col justify-center items-center"
