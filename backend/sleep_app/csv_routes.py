@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 import pandas as pd
 
-# Create a blueprint for the CSV routes
+
 csv_routes = Blueprint("csv_routes", __name__)
 
 @csv_routes.route('/csv-data', methods=['GET'])

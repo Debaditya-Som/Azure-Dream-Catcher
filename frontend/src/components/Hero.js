@@ -3,7 +3,7 @@ import React from "react";
 const LandingPage = () => {
   return (
     <div className="bg-[#F8F6F5] bg-opacity-80 min-h-screen flex items-center justify-center px-7 py-0 sm:py-0 md:py-0">
-      {/* Content Section: Right Side */}
+     
       <div className="flex flex-col justify-center items-center text-center w-full md:w-1/2">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           Predict Your Sleep Quality
@@ -32,7 +32,6 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* Image Section: Left Side */}
       <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
         <img
           src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjY4Ni0yNTMuanBn.jpg"
