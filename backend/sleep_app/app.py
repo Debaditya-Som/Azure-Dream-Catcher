@@ -5,7 +5,6 @@ from sentiments_routes import sentiment_routes
 from clinic_routes import clinics_routes
 app = Flask(__name__)
 
-# Register blueprints
 app.register_blueprint(model_routes, url_prefix="/model")
 app.register_blueprint(csv_routes, url_prefix="/data")
 app.register_blueprint(sentiment_routes, url_prefix="/sentiment")  
