@@ -99,7 +99,7 @@ const Map = () => {
     };
 
     return (
-        <div className="container p-4 shadow" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div id="map" className="container p-4 shadow " style={{ maxWidth: '800px', margin: '0 auto' }}>
            <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Find nearest somnologists</h2>
             <div className="map-container bg-white rounded-lg overflow-hidden" style={{ width: '100%', height: '600px', margin: '0 auto' }}>
                 <div className="get-my-location">

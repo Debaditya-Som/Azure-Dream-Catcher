@@ -7,10 +7,10 @@ const Navbar = () => {
         <img
           src="./main_logo.png" 
           alt="Logo"
-          className="w-20 h-10 md:w-12 md:h-12" 
+          className="w-20 h-18 md:w-20 md:h-18" 
         />
        
-        <h1 className="text-l sm:text-xl md:text-xl lg:text-3xl tracking-wide text-shadow animation-fadeIn">
+        <h1 className="text-l sm:text-xl md:text-xl lg:text-3xl tracking-wide text-shadow animation-fadeIn italic">
           Azure Dream Catcher
         </h1>
       </div>

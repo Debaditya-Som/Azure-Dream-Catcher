@@ -2,13 +2,21 @@ import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
-
+from azure.identity import DefaultAzureCredential
 import pandas as pd
 
+from azureml.core import Workspace, Datastore
+from azureml.data import TabularDataset
+
+import pandas as pd
+from azure.ai.ml import MLClient
 from azure.identity import DefaultAzureCredential
 
+ml_client = MLClient.from_config(credential=DefaultAzureCredential())
+data_asset = ml_client.data.get("Sleep-Analysis", version="2")
 
-df = pd.read_csv('datasets/sleep_data_with_labels.csv')
+df = pd.read_csv(data_asset.path)
+
 
 # Preprocess data
 df['Sleep Quality'] = df['Sleep Quality'].apply(lambda x: 1 if x == 'Good' else 0)

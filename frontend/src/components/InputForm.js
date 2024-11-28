@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-
+ 
 const InputForm = () => {
   const [formData, setFormData] = useState({
     sleepDuration: "",
     remSleep: "",
     heartRate: "",
   });
-
+  const [showMap, setShowMap] = useState(false);
   const [predictionResult, setPredictionResult] = useState(null);
   const [error, setError] = useState(null);
 
@@ -46,8 +46,31 @@ const InputForm = () => {
     }
   };
 
+  const isPoor = predictionResult && predictionResult["Prediction Result"] === "Poor";
+
   return (
-    <div className="min-h-screen bg-[#9B59B6] flex justify-center items-center">
+    <div id="input-form" className="min-h-screen bg-[#9B59B6] flex justify-center items-center">
+       <div className="flex flex-col justify-center items-center text-center w-full md:w-1/2">
+        <h1 className="text-4xl font-bold text-white mb-4">
+          Predict Your Sleep Quality
+        </h1>
+        <p className="text-lg text-white max-w-lg mb-8">
+          Using advanced data science, our tool predicts your sleep quality based on your sleep duration, REM sleep, and heart rate.
+        </p>
+        <div id="cta" className="text-center mt-12">
+          <h2 className="text-3xl font-semibold text-white mb-4">How It Works</h2>
+          <p className="text-lg text-white px-10 mb-6">
+            Input your sleep data and let our model predict whether your sleep quality is good or poor. 
+            Our model uses a combination of sleep metrics to make accurate predictions.
+          </p>
+          <a
+            href=""
+            className="bg-[#33023B] text-white py-3 px-6 rounded-lg shadow-lg hover:bg-teal-600 transition duration-300"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
       <div className="bg-white p-8 rounded-lg shadow-lg w-96">
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
           Sleep Quality Predictor
@@ -115,15 +138,28 @@ const InputForm = () => {
         </form>
 
         {predictionResult && (
-          <div className="mt-6 p-4 bg-green-100 rounded-md">
-            <h3 className="text-lg font-semibold text-green-800">Prediction Result:</h3>
-            <p className="text-gray-700">
+          <div
+            className={`mt-6 p-4 rounded-md ${isPoor ? 'bg-red-100' : 'bg-green-100'}`}
+          >
+            <h3
+              className={`text-lg font-semibold ${isPoor ? 'text-red-800' : 'text-green-800'}`}
+            >
+              Prediction Result:
+            </h3>
+            <p
+              className={`text-gray-700 ${isPoor ? 'text-red-600' : 'text-green-600'}`}
+            >
               Sleep Quality:{" "}
-              <strong className="text-green-600">
+              <strong>
                 {predictionResult["Prediction Result"]}
               </strong>
             </p>
-            <p className="text-gray-700">Input Data: {JSON.stringify(predictionResult["Input Data"])}</p>
+
+            {isPoor && (
+              <div className="mt-4 text-red-600">
+                <p>Your sleep quality seems poor. We recommend visiting <strong><a href="#map">a somnologist or sleep clinic</a>.</strong></p>
+              </div>
+            )}
           </div>
         )}
 
