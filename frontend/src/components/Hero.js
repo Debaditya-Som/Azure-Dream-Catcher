@@ -2,7 +2,7 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <div className="bg-[#F8F6F5] bg-opacity-80 min-h-screen flex items-center justify-center px-7 py-2 sm:py-1 md:py-1">
+    <div id="home" className="bg-[#F8F6F5] bg-opacity-80 min-h-screen flex items-center justify-center px-7 py-2 sm:py-1 md:py-1">
      
       <div className="flex flex-col justify-center items-center text-center w-full md:w-1/2">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">

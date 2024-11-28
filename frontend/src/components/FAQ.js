@@ -26,7 +26,7 @@ const FAQ = () => {
     {
       question: "Can Azure Dream Catcher show nearby sleep clinics?",
       answer:
-        "Yes, Azure Dream Catcher uses React Leaflet to display a map with the nearest sleep clinics based on the user's current location. The data is fetched from an API connected to a MongoDB database.",
+        "Yes, Azure Dream Catcher uses React Leaflet to display a map with the nearest sleep clinics based on the user's current location.",
     },
     {
       question: "Do I need any specific hardware or devices?",
@@ -34,7 +34,7 @@ const FAQ = () => {
         "No specific hardware is required. Azure Dream Catcher is designed to work on smartphones, tablets, and desktops with an internet connection.",
     },
     {
-      question: "Is my data secure with Dream Catcher?",
+      question: "Is my data secure with Azure Dream Catcher?",
       answer:
         "Yes, Azure Dream Catcher prioritizes user privacy. All data is securely stored and complies with data protection regulations.",
     },

@@ -59,9 +59,9 @@ const DataVisualization = () => {
         </div>
         
       </div>
-      <div className="w-1/2 p-4">
-          <h3 className="text-2xl text-center font-semibold text-gray-800 mb-4">About the Visualization</h3>
-          <p className="text-gray-700">
+      <div className="w-1/2 p-4 ml-5">
+          <h3 className="text-3xl text-center font-semibold text-black mb-4">About the Visualization</h3>
+          <p className="text-gray-800">
             This visualization presents a comparison of sleep duration and REM sleep percentage over time. The two lines represent:
             <ul className="list-disc pl-5 mt-2">
               <li><strong>Sleep Duration (hours):</strong> The total amount of time spent sleeping each night.</li>

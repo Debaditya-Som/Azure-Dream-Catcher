@@ -22,8 +22,9 @@ const App = () => {
       <InputForm setPrediction={setPrediction} />
       
       <DataVisualization />
-      <SentimentAnalysisForm/>
+      
       <Map/>
+      <SentimentAnalysisForm/>
       <SleepHelp/>
       <FAQ/>
       <Footer/>

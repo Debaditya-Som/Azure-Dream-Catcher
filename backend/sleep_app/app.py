@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask
 from model_routes import model_routes
 from csv_routes import csv_routes
