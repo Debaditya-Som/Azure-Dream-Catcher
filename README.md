@@ -34,13 +34,14 @@ This application consists of two main components:
 ### Functionalities
 - **User Input Form**: Users can enter their sleep data: Sleep Duration, REM Sleep, and Heart Rate.
 - **Prediction**: The app predicts the quality of sleep as either "Good" or "Poor" based on the input data.
+- **Locate Nearest Clinics** : Locate nearest sleep clinics in an interactive map. 
 - **Minimalistic Design**: The application is designed with simplicity in mind, featuring a clean and intuitive interface.
 
 ## Tech Stack
 - **Backend:** 
   - Python (Flask)
   - Azure ML Workspace (for model training)
-  - Azure AI (for Sentiment Analysis)
+  - Azure AI Cognitive Services (for Sentiment Analysis)
 - **Frontend:** 
   - React.js
   - Tailwind CSS 
