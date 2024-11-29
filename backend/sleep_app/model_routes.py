@@ -1,12 +1,13 @@
 from flask import Blueprint, jsonify, request
 import pickle
 import numpy as np
+import os
 
 model_routes = Blueprint("model_routes", __name__)
 
 
 try:
-    model_filename = "models/sleep_quality_model.pkl"
+    model_filename = os.path.join(os.getcwd(), "models", "sleep_quality_model.pkl")
     with open(model_filename, "rb") as file:
         model = pickle.load(file)
     print("Model loaded successfully.")

@@ -3,7 +3,11 @@ from model_routes import model_routes
 from csv_routes import csv_routes
 from sentiments_routes import sentiment_routes  
 from clinic_routes import clinics_routes
+from flask_cors import CORS
+
 app = Flask(__name__)
+
+CORS(app)
 
 app.register_blueprint(model_routes, url_prefix="/model")
 app.register_blueprint(csv_routes, url_prefix="/data")
