@@ -15,7 +15,7 @@
    <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge" alt="logo" width="100" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="logo" width="100" />
   </p>
-This project is a web application designed to predict sleep quality based on user input such as sleep duration, REM sleep percentage, and heart rate. Additionally, it offers sentiment analysis of user-submitted dream descriptions to understand the emotional tone of the text.
+This project is a web application designed to using Azure AI and ML tools to analyze dream sentiments, predict sleep quality, and locate nearby clinics for comprehensive sleep health insights.
 
 
 ## Features
@@ -45,7 +45,13 @@ This application consists of two main components:
   - Azure AI Cognitive Services (for Sentiment Analysis)
 - **Frontend:** 
   - React.js
-  - Tailwind CSS 
+  - Tailwind CSS
+- **Deployment:**
+  - Docker
+  - Docker Compose
+  - Azure App Services
+  - Azure Container Registry
+    
 
 ## Model Training
 The sleep quality prediction model was trained using **Azure ML Workspace**. The dataset was uploaded and stored in **Azure Blob Storage**, ensuring scalability and easy access and the model was trained in **Azure ML Workspace**.
@@ -56,9 +62,30 @@ For sentiment analysis, the project leverages **Azure AI**'s **Text Analytics AP
 ## Nearby Clinics Locator
 The project integrates a Nearby Sleep Clinics Locator feature that uses geolocation services to assist users in finding the nearest clinics or counseling centers. This functionality aims to ensure users can easily access professional help based on their current location.
 
+## Deployments
+This project has been deployed using Docker, Docker Compose, Azure App Services, and Azure Container Registry for efficient, scalable, and containerized deployment. Below are the details of the deployment process
+
 ## Credits
-- Azure ML Workspace: Used to train and deploy the sleep quality prediction model.
-- Azure AI (Text Analytics API): Used for sentiment analysis on user-provided dream descriptions
+
+- **Azure ML Workspace**  
+  Used to train and deploy the **sleep quality prediction model**, leveraging scalable cloud-based machine learning tools to streamline the model development and deployment process.
+
+- **Azure AI (Text Analytics API)**  
+  Utilized for performing **sentiment analysis** on user-provided dream descriptions, enabling accurate emotional tone classification (positive, neutral, or negative).
+
+- **Azure Blob Storage**  
+  Facilitated secure storage and retrieval of datasets used for training the machine learning models.
+
+- **Azure App Services**  
+  Hosted the web application, ensuring high availability, scalability, and integration with other Azure services like Azure Container Registry.
+
+- **Azure Container Registry**  
+  Served as a central repository for managing and securely storing Docker images used for deploying the project in a containerized environment.
+
+- **Docker and Docker Compose**  
+  Enabled consistent containerization and multi-container orchestration for deploying the application.
+
+  
 
 ## Demo Video 
 
@@ -71,3 +98,7 @@ https://github.com/user-attachments/assets/dbb6fda5-f57f-48f4-84fc-8767e7b2a274
 ## Presentation link :
 
 [Click Here](https://stdntpartners-my.sharepoint.com/:p:/g/personal/debaditya_som_studentambassadors_com/EWMoHN3y8vtFhJCVOkuc9E8BQuNsuMDeGY3_Lb8dRkARpg?e=zBeoXg)
+
+## Pitch link :
+
+[Click Here](https://www.youtube.com/watch?v=Kc6VUHSGFVY)
