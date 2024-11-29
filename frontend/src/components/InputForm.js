@@ -1,12 +1,11 @@
 import React, { useState } from "react";
- 
+
 const InputForm = () => {
   const [formData, setFormData] = useState({
     sleepDuration: "",
     remSleep: "",
     heartRate: "",
   });
-  const [showMap, setShowMap] = useState(false);
   const [predictionResult, setPredictionResult] = useState(null);
   const [error, setError] = useState(null);
 
@@ -21,7 +20,7 @@ const InputForm = () => {
     setPredictionResult(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/model/predict", {
+      const response = await fetch("https://azure-dream-catcher.azurewebsites.net/model/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,30 +48,34 @@ const InputForm = () => {
   const isPoor = predictionResult && predictionResult["Prediction Result"] === "Poor";
 
   return (
-    <div id="input-form" className="min-h-screen bg-[#9B59B6] flex justify-center items-center">
-       <div className="flex flex-col justify-center items-center text-center w-full md:w-1/2">
-        <h1 className="text-4xl font-bold text-white mb-4">
-          Predict Your Sleep Quality
-        </h1>
-        <p className="text-lg text-white max-w-lg mb-8">
-          Using advanced data science, our tool predicts your sleep quality based on your sleep duration, REM sleep, and heart rate.
-        </p>
-        <div id="cta" className="text-center mt-12">
-          <h2 className="text-3xl font-semibold text-white mb-4">How It Works</h2>
-          <p className="text-lg text-white px-10 mb-6">
-            Input your sleep data and let our model predict whether your sleep quality is good or poor. 
-            Our model uses a combination of sleep metrics to make accurate predictions.
-          </p>
-          <a
-            href=""
-            className="bg-[#33023B] text-white py-3 px-6 rounded-lg shadow-lg hover:bg-teal-600 transition duration-300"
-          >
-            Get Started
-          </a>
-        </div>
-      </div>
-      <div className="bg-white p-8 rounded-lg shadow-lg w-96">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
+    <div id="input-form" className="min-h-screen bg-[#9B59B6] flex flex-col md:flex-row justify-center items-center p-4">
+      
+      {/* Left Side - Text Content */}
+<div className="flex flex-col items-center justify-center w-full md:w-1/2 mb-8 md:mb-0">
+  <h1 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+    Predict Your Sleep Quality
+  </h1>
+  <p className="text-base md:text-lg text-white max-w-lg text-center mb-8">
+    Using advanced data science and Machine Learning Model (Logistic regression) trained in Azure ML Studio, our tool predicts your sleep quality based on your sleep duration, REM sleep, and heart rate.
+  </p>
+  <div id="cta" className="text-center mt-6">
+    <h2 className="text-2xl md:text-3xl font-semibold text-white text-center mb-4">How It Works</h2>
+    <p className="text-base md:text-lg text-white max-w-lg text-center mb-6">
+      Input your sleep data and let our model predict whether your sleep quality is good or poor. 
+      Our model uses a combination of sleep metrics to make accurate predictions.
+    </p>
+    <a
+      href=""
+      className="bg-[#33023B] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-teal-600 transition duration-300"
+    >
+      Get Started
+    </a>
+  </div>
+</div>
+
+      {/* Right Side - Input Form */}
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h2 className="text-xl md:text-2xl font-semibold text-center text-gray-800 mb-6">
           Sleep Quality Predictor
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">

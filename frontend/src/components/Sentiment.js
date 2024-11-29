@@ -34,7 +34,7 @@ const SentimentAnalysisForm = () => {
       style={{
         backgroundImage:
           'url("https://wallpapers.com/images/hd/4k-firewatch-purple-forest-silhouette-l9ij5athfr2lj8on.jpg")',
-        backgroundSize: '80%', // Reduced the background size
+        backgroundSize: '80%',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
       }}
@@ -42,7 +42,7 @@ const SentimentAnalysisForm = () => {
       <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-7xl space-y-8 md:space-y-0 md:space-x-8">
         {/* Left Section: Sentiment Analysis Form */}
         <div className="bg-white/60 backdrop-blur-lg p-8 rounded-lg shadow-xl w-full md:w-[650px] lg:w-[700px] max-w-[750px]">
-          <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">
+        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">
             Dream Sentiment Analysis
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -95,26 +95,24 @@ const SentimentAnalysisForm = () => {
         </div>
 
         {/* Right Section: Description about Dream Sentiment Analysis */}
-        <div className="bg-white/60 backdrop-blur-lg p-8 rounded-lg shadow-xl w-64 md:w-96 lg:w-[500px] max-w-[550px]">
-          <h3 className="text-2xl font-semibold text-center text-gray-800 mb-4">
-            About Dream Sentiment Analysis
-          </h3>
-          <p className="text-black text-base text-center">
-  This Dream Sentiment Analysis tool utilizes the power of&nbsp;
-  <strong>
-    <a 
-      href="https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai?wt.mc_id=studentamb_296415" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      Azure AI Cognitive Services&nbsp;
-    </a>
-  </strong> 
-  to analyze the emotional tone of your dreams. By analyzing your dream text, the tool predicts the sentiment (positive, negative, or neutral) and provides confidence scores for each sentiment type. Whether you're looking for insights into your emotional state or seeking patterns in your dreams, this tool offers an easy and quick way to understand the emotional context behind your dreams.
-</p>
-
-
-        </div>
+        <div class="bg-white/60 backdrop-blur-lg p-8 rounded-lg shadow-xl w-full md:w-96 lg:w-[500px] max-w-[550px]">
+  <h3 class="text-2xl font-semibold text-center text-gray-800 mb-4">
+    About Dream Sentiment Analysis
+  </h3>
+  <p class="text-black text-base text-center">
+    This Dream Sentiment Analysis tool utilizes the power of&nbsp;
+    <strong>
+      <a 
+        href="https://learn.microsoft.com/en-us/training/paths/get-started-azure-ai?wt.mc_id=studentamb_296415" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Azure AI Cognitive Services&nbsp;
+      </a>
+    </strong> 
+    to analyze the emotional tone of your dreams. By analyzing your dream text, the tool predicts the sentiment (positive, negative, or neutral) and provides confidence scores for each sentiment type. Whether you're looking for insights into your emotional state or seeking patterns in your dreams, this tool offers an easy and quick way to understand the emotional context behind your dreams.
+  </p>
+</div>
       </div>
     </div>
   );

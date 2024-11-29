@@ -44,7 +44,7 @@ const Map = () => {
         // Fetch clinics data from the API
         const fetchClinics = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:5000/api/clinics-data');
+                const response = await fetch('https://azure-dream-catcher.azurewebsites.net/api/clinics-data');
                 if (!response.ok) {
                     throw new Error('Failed to fetch clinics data.');
                 }
