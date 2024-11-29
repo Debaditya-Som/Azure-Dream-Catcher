@@ -25,7 +25,8 @@ This project is a web application designed to using Azure AI and ML tools to ana
 
 ## Project Workflow
 
-![image](https://github.com/user-attachments/assets/b8371671-4e0f-445f-aada-fc4781cfe605)
+![image](https://github.com/user-attachments/assets/0627ff30-3fea-47d2-969c-bb76a002eac3)
+
 
 ## Overview
 This application consists of two main components:
