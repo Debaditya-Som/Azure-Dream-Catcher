@@ -45,7 +45,13 @@ This application consists of two main components:
   - Azure AI Cognitive Services (for Sentiment Analysis)
 - **Frontend:** 
   - React.js
-  - Tailwind CSS 
+  - Tailwind CSS
+- **Deployment:**
+  - Docker
+  - Docker Compose
+  - Azure App Services
+  - Azure Container Registry
+    
 
 ## Model Training
 The sleep quality prediction model was trained using **Azure ML Workspace**. The dataset was uploaded and stored in **Azure Blob Storage**, ensuring scalability and easy access and the model was trained in **Azure ML Workspace**.
