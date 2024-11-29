@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend/sleep_app  # Path to your backend folder (where the Dockerfile is located)
+    ports:
+      - "5000:5000"  # Expose Flask app on port 5000
+    volumes:
+      - ./backend/sleep_app:/app  # Mount the backend folder to /app in the container
+    environment:
+      - FLASK_APP=app.py  # Set the FLASK_APP environment variable for the Flask app
+
+  frontend:
+    build:
+      context: ./frontend  # Path to your frontend folder (where the Dockerfile is located)
+    ports:
+      - "80:80"  # Expose the frontend on port 80
+    depends_on:
+      - backend  # Ensure frontend starts after backend is ready
+    volumes:
+      - ./frontend:/app  # Mount the frontend folder to /app in the container
