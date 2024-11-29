@@ -15,7 +15,7 @@
    <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge" alt="logo" width="100" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="logo" width="100" />
   </p>
-This project is a web application designed to predict sleep quality based on user input such as sleep duration, REM sleep percentage, and heart rate. Additionally, it offers sentiment analysis of user-submitted dream descriptions to understand the emotional tone of the text.
+This project is a web application designed to using Azure AI and ML tools to analyze dream sentiments, predict sleep quality, and locate nearby clinics for comprehensive sleep health insights.
 
 
 ## Features
